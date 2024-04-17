@@ -1,37 +1,50 @@
 const fs = require('fs');
 const main_rooms_config = {
     room1: {
-        beds: [1,2,3,4],
-        students: ['Akshay','sajjad','ujjval','Amit'],
+        beds: [1,2,3,4,5,6,7,8,9,10],
+        students: ['Akash Gupta','Taushif','Suraj','Yash dorje','Nitin Panday','Ankush Gupta','Raj Kumar','Ajay Meena','Vikash','Kaustub'],
         shuffled_students: []
     },
-    room3:{
-        beds:[5,6,7,8],
-        students:['Roshan lale','Prathmesh','Abhimnyu',8],
+    room6: {
+        beds: [11,12,13,14,15,16,17,18,19,20],
+        students: ['Shailendra','Paras','Empty', 'Nilesh', 'Vansh','Nagendra','Vishwajeet','Ajit','Ravindra','Sharawan'],
+        shuffled_students: []
+    },
+    room7: {
+        beds:[21,22,23,24,25,26,27,28],
+        students:['Empty','Washim','Amit Yadav','Ajay Sharma','Dipak','Rahul','Ravi kumar','Rohit Gopale'],
         shuffled_students:[]
 
     },
-    room6: {
-        beds: [9,10,11,12,13,14,15,16,17,18],
-        students: ['Nasir','Aarif','Saikiran', 'Subham', 'Akshit','Bharat','Bhumesh','Pawan','Surya',18],
+    room8: {
+        beds: [29,30,31,32,33,34],
+        students: ['Empty','Nikhil Patre','Ansh Gupta','Shivam Mishra','Mahi Manoj','Shohan'],
         shuffled_students: []
     },
-    room8: {
-        beds: [19,20,21,22,23,24],
-        students: ['Aadarsh','Akash',' Nikhil','Bipin','Manoj',24],
-        shuffled_students: []
+    room9: {
+        beds:[35,36,37,38],
+        students:['Empty','Shivam HVA','Amit Kumar','Ayush'],
+        shuffled_students:[]
+
+    },
+    room10: {
+        beds:[39,40,41,42,43,44,45,46],
+        students:['Vishal Rathor','Rupesh Jadhav','Empty','Sandeep','Empty','Suleman','Bansi','Abdul'],
+        shuffled_students:[]
+
     },
     room11: {
-        beds: [25,26,27,28,29,30],
-        students: ['Harshal','Suraj','Bhupendra','Aniket','Amol',30],
+        beds: [47,48,49,50,51,52],
+        students: ['Empty','Mohit Kamal','Mahavir','Sujit','Shree Krishna','OM Ji'],
         shuffled_students: []
     },
     room12: { 
-        beds: [31,32,33,34,35,36,37,38,39,40],
-        students: ['Mahendra','Satish','Pradeep','Khaja Baig','Vikash','Anurag','Rajesh','Raja','Vicky',40],
+        beds: [53,54,55,56,57,58,59,60,61,62],
+        students: ['Empty','Shikhar','Ravi Ranjan','Rohit Kumar','Nasir','Jagdish Bhatt','Empaty','Vishal Gupta','Aniket Panday','Ajay Navgurukul'],
         shuffled_students: []
     }
 }
+
 function roomShuffling(rooms_config) {
     for (room in rooms_config) {
         var [count,counter] = [0,0]
